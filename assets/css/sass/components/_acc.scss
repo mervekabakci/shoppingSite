@@ -1,0 +1,35 @@
+.accordion-item {
+  &:first-of-type {
+    & > .accordion-header {
+      .accordion-button {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.accordion-button {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--primary);
+  min-height: 60px;
+  padding-left: 30px;
+  &:not(.collapsed) {
+    background-color: var(--primary);
+    color: var(--white);
+    &:after {
+      filter: invert(1) brightness(1.5);
+    }
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.accordion-body{
+    font-size: 14px;
+    line-height: 24px;
+    padding: 20px 30px 30px;
+}

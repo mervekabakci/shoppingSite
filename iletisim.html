@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+
+    <!--favicon set start-->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon'">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon set end-->
+
+    <!--Google font Roboto start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Google font Roboto end-->
+
+    <!--bootstrap cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--aos.css sayfa kaydırlırken anımasyon yapmak ıcın-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="assets/css/app.min.css">
+</head>
+<body class="overflow-hidden">
+    <!--Preloader Start-->
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!--Preloader end-->
+
+    <!--header start-->
+    <header id="header" class="py-3 bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-dark rounded-5" data-bs-theme="dark">
+                <div class="container-fluid h-100">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="200">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Anasayfa</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ürünler
+                                </a>
+                                <ul class="dropdown-menu p-3">
+                                    <li><a class="dropdown-item rounded-5 p-3" href="pages/products/kadin/index.html">Kadın</a></li>
+                                    <li><a class="dropdown-item rounded-5 p-3" href="pages/products/erkek/index.html">Erkek</a></li>
+                                    <li><a class="dropdown-item rounded-5 p-3" href="pages/products/cocuk/index.html">Çocuk</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sss.html">Sıkça Sorulan Sorular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--header end-->
+
+    <!--content start-->
+    <main>
+        <div class="container">
+            <div class="pageContentWrapper">
+                <!--Sıkça sorulan sorular start-->
+                <div class="section">
+                    <div class="sectionHead">
+                        <div class="sectionTitle" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="200">İletişim Formu</div>
+                    </div>
+                    <div class="sectionContent">
+                        <form class="form needs-validation" novalidate>
+                            <div class="input-group has-validation">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="nameSurname" placeholder="Adınız Soyadınız" required>
+                                    <label for="nameSurname">Adınız Soyadınız</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Lütfen Adınızı Soyadınızı Giriniz
+                                </div>
+                            </div>
+                            <div class="input-group has-validation">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="eposta" placeholder="E-Posta Adresiniz" required>
+                                    <label for="eposta">E-Posta Adresiniz</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Lütfen E-Posta Adresinizi Giriniz
+                                </div>
+                            </div>
+                            <div class="input-group has-validation">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="phone" placeholder="Telefon Numaranız" required>
+                                    <label for="phone">Telefon Numaranız</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Lütfen Telefon Numaranızı Giriniz
+                                </div>
+                            </div>
+                            <div class="input-group has-validation">
+                                <div class="form-floating mb-3">
+                                    <textarea name="message" id="message" class="form-control" placeholder="Mesajınız" required></textarea>
+                                    <label for="message">Mesajınız</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Lütfen Mesajınızı Giriniz
+                                </div>
+                            </div>
+                            <div class="col-12 text-end">
+                              <button class="btn button-primary btn-lg px-5 py-3" type="submit">Gönder</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--Sıkça sorulan sorular end-->
+
+            </div>
+        </div>
+    </main>
+    <!--content end-->
+
+    <!--footer start-->
+    <footer class="bg-white py-3">
+        <div class="container d-flex align-items-center bg-dark h-100 px-5 rounded-5" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="200">
+           <span class="fs-6 fw-medium"> © Tüm Hakları Saklıdır.</span>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <!--Bootstrap cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--aos.js sayfa kaydırlırken anımasyon yapmak ıcın-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        //Bootstrap validation script start
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+        'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+        //Bootstrap validation script end
+    </script>
+</body>
+</html>

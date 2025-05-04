@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><base href="../../../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+
+    <!--favicon set start-->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon'">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon set end-->
+
+    <!--Google font Roboto start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Google font Roboto end-->
+
+    <!--bootstrap cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--aos.css sayfa kaydırlırken anımasyon yapmak ıcın-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+    <link rel="stylesheet" href="assets/css/app.min.css">
+</head>
+<body class="overflow-hidden">
+    <!--Preloader Start-->
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!--Preloader end-->
+
+    <!--header start-->
+    <header id="header" class="py-3 bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-dark rounded-5" data-bs-theme="dark">
+                <div class="container-fluid h-100">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="200">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Anasayfa</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ürünler
+                                </a>
+                                <ul class="dropdown-menu p-3">
+                                    <li><a class="dropdown-item rounded-5 p-3" href="pages/products/kadin/index.html">Kadın</a></li>
+                                    <li><a class="dropdown-item rounded-5 p-3" href="pages/products/erkek/index.html">Erkek</a></li>
+                                    <li><a class="dropdown-item rounded-5 p-3" href="pages/products/cocuk/index.html">Çocuk</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sss.html">Sıkça Sorulan Sorular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">İletişim</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--header end-->
+
+    <!--content start-->
+    <main>
+        <div class="container">
+            <div class="pageContentWrapper">
+                <!--ürünler cards start-->
+                <div class="section">
+                    <div class="sectionHead">
+                        <div class="sectionTitle" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="200">Çocuk Koleksiyon</div>
+                    </div>
+                    <div class="sectionContent">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="600">
+                                <div class="card h-100 rounded-5 border-0 shadow-lg overflow-hidden">
+                                    <div id="erkekCocukTakim" class="carousel slide carousel-fade card-img" data-bs-ride="carousel"> 
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#erkekCocukTakim" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#erkekCocukTakim" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#erkekCocukTakim" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-fancybox="galleryErkekCocukTakim" data-src="assets/img/media/products/cocuk/erkek-cocuk.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/erkek-cocuk.jpg" class="d-block w-100" alt="erkek-cocuk.jpg">
+                                            </div>
+                                            <div class="carousel-item" data-fancybox="galleryErkekCocukTakim" data-src="assets/img/media/products/cocuk/erkek-cocuk-2.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/erkek-cocuk-2.jpg" class="d-block w-100" alt="erkek-cocuk-2.jpg">
+                                            </div>
+                                            <div class="carousel-item" data-fancybox="galleryErkekCocukTakim" data-src="assets/img/media/products/cocuk/erkek-cocuk-3.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/erkek-cocuk-3.jpg" class="d-block w-100" alt="erkek-cocuk-3.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pages/erkek/erkek-cocuk-takim.html" class="card-body">
+                                        <div class="card-title">carino's kids Planet Yelekli Erkek Çocuk Takım Elbise</div>
+                                        <div class="card-text">
+                                            YELEK+GÖMLEK+PANTOLON+PAPYON ve ZİNCİR AKSESUAR DETAYLI. 5 PARÇANADAN OLUŞUR.
+                                        </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="btn btn-link">Satın Al</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="600">
+                                <div class="card h-100 rounded-5 border-0 shadow-lg overflow-hidden">
+                                    <div id="kizCocukElbise" class="carousel slide carousel-fade card-img" data-bs-ride="carousel"> 
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-fancybox="gallerykizCocukElbise" data-src="assets/img/media/products/cocuk/kiz-cocuk-elbise.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/kiz-cocuk-elbise.jpg" class="d-block w-100" alt="kiz-cocuk-elbise.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pages/erkek/erkek-cocuk-takim.html" class="card-body">
+                                        <div class="card-title">KIZ ÇOCUK BROŞ AKSESUARLI ÖNDEN DÜĞMELİ ELBİSE</div>
+                                        <div class="card-text">
+                                            Sade ve şık görünümüyle dikkat çeken düz desen, kolay kombin yapma imkanı sunar.
+                                        </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="btn btn-link">Satın Al</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="600">
+                                <div class="card h-100 rounded-5 border-0 shadow-lg overflow-hidden">
+                                    <div id="kizCocuk" class="carousel slide carousel-fade card-img" data-bs-ride="carousel"> 
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-fancybox="gallerykizCocuk" data-src="assets/img/media/products/cocuk/kiz-cocuk.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/kiz-cocuk.jpg" class="d-block w-100" alt="kiz-cocuk.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pages/erkek/erkek-cocuk-takim.html" class="card-body">
+                                        <div class="card-title">Kız Çocuk Pembe Unicorn Tütü Elbise</div>
+                                        <div class="card-text">
+                                            Kız Çocuk Pembe Unicorn Tütü Elbise Unicorn Taç Özel Tasarım Doğum Günü Saç Aksesuarı
+                                        </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="btn btn-link">Satın Al</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ürünler cards end-->
+                
+                <!--Home banner start-->
+                <div class="section homeSection rounded-5 overflow-hidden border border-gray" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="200">
+                    <div id="cocukSlide" class="carousel slide carousel-fade" data-bs-ride="carousel"> 
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#cocukSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#cocukSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#cocukSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/media/banner/erkek-cocuk-takim.jpg" class="d-block w-100" alt="erkek-cocuk-takim.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/media/banner/kiz-cocuk-elbise.jpg" class="d-block w-100" alt="kiz-cocuk-elbise.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/media/banner/kiz-cocuk.jpg" class="d-block w-100" alt="kiz-cocuk.jpg">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cocukSlide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cocukSlide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!--Home banner end-->
+
+                <!--ürünler cards start-->
+                <div class="section">
+                    <div class="sectionContent">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="600">
+                                <div class="card h-100 rounded-5 border-0 shadow-lg overflow-hidden">
+                                    <div id="erkekCocukTakim" class="carousel slide carousel-fade card-img" data-bs-ride="carousel"> 
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#erkekCocukTakim" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#erkekCocukTakim" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#erkekCocukTakim" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-fancybox="galleryErkekCocukTakim" data-src="assets/img/media/products/cocuk/erkek-cocuk.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/erkek-cocuk.jpg" class="d-block w-100" alt="erkek-cocuk.jpg">
+                                            </div>
+                                            <div class="carousel-item" data-fancybox="galleryErkekCocukTakim" data-src="assets/img/media/products/cocuk/erkek-cocuk-2.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/erkek-cocuk-2.jpg" class="d-block w-100" alt="erkek-cocuk-2.jpg">
+                                            </div>
+                                            <div class="carousel-item" data-fancybox="galleryErkekCocukTakim" data-src="assets/img/media/products/cocuk/erkek-cocuk-3.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/erkek-cocuk-3.jpg" class="d-block w-100" alt="erkek-cocuk-3.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pages/erkek/erkek-cocuk-takim.html" class="card-body">
+                                        <div class="card-title">carino's kids Planet Yelekli Erkek Çocuk Takım Elbise</div>
+                                        <div class="card-text">
+                                            YELEK+GÖMLEK+PANTOLON+PAPYON ve ZİNCİR AKSESUAR DETAYLI. 5 PARÇANADAN OLUŞUR.
+                                        </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="btn btn-link">Satın Al</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="600">
+                                <div class="card h-100 rounded-5 border-0 shadow-lg overflow-hidden">
+                                    <div id="kizCocukElbise" class="carousel slide carousel-fade card-img" data-bs-ride="carousel"> 
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-fancybox="gallerykizCocukElbise" data-src="assets/img/media/products/cocuk/kiz-cocuk-elbise.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/kiz-cocuk-elbise.jpg" class="d-block w-100" alt="kiz-cocuk-elbise.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pages/erkek/erkek-cocuk-takim.html" class="card-body">
+                                        <div class="card-title">KIZ ÇOCUK BROŞ AKSESUARLI ÖNDEN DÜĞMELİ ELBİSE</div>
+                                        <div class="card-text">
+                                            Sade ve şık görünümüyle dikkat çeken düz desen, kolay kombin yapma imkanı sunar.
+                                        </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="btn btn-link">Satın Al</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="600">
+                                <div class="card h-100 rounded-5 border-0 shadow-lg overflow-hidden">
+                                    <div id="kizCocuk" class="carousel slide carousel-fade card-img" data-bs-ride="carousel"> 
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-fancybox="gallerykizCocuk" data-src="assets/img/media/products/cocuk/kiz-cocuk.webp">
+                                                <img src="assets/img/media/products/cocuk/thumb/kiz-cocuk.jpg" class="d-block w-100" alt="kiz-cocuk.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pages/erkek/erkek-cocuk-takim.html" class="card-body">
+                                        <div class="card-title">Kız Çocuk Pembe Unicorn Tütü Elbise</div>
+                                        <div class="card-text">
+                                            Kız Çocuk Pembe Unicorn Tütü Elbise Unicorn Taç Özel Tasarım Doğum Günü Saç Aksesuarı
+                                        </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <a href="javascript:;" class="btn btn-link">Satın Al</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ürünler cards end-->
+            </div>
+        </div>
+    </main>
+    <!--content end-->
+
+    <!--footer start-->
+    <footer class="bg-white py-3">
+        <div class="container d-flex align-items-center bg-dark h-100 px-5 rounded-5" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="200">
+           <span class="fs-6 fw-medium"> © Tüm Hakları Saklıdır.</span>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <!--Bootstrap cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--aos.js sayfa kaydırlırken anımasyon yapmak ıcın-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+</body>
+</html>

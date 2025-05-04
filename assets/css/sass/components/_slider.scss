@@ -1,0 +1,66 @@
+/*Carousel standart style start*/
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 6rem;
+  height: 6rem;
+  transition: all 0.3s linear;
+  filter: invert(1);
+  background-color: var(--black);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  display: inline;
+  font: 1em sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-size: 4rem;
+}
+.carousel-control-next-icon {
+  background-position: 70%;
+}
+.carousel-control-prev-icon {
+  background-position: 40%;
+  @media screen and (min-width: 992px) {
+    &:hover {
+      transform: translateX(-16px);
+    }
+  }
+}
+.carousel-control-next-icon {
+  @media screen and (min-width: 992px) {
+    &:hover {
+      transform: translateX(16px);
+    }
+  }
+}
+
+.carousel-indicators {
+  bottom: 20px;
+  [data-bs-target] {
+    transition: all 0.3s linear;
+    border-radius: 6px;
+    height: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 24px;
+    border: none;
+    background-color: var(--tertiary);
+    @media screen and (min-width: 992px) {
+      &:hover {
+        width: 45px;
+        opacity: 1;
+      }
+    }
+  }
+  .active {
+    width: 45px;
+  }
+}
+
+/*Carousel standart style end*/
+.carousel-item[data-fancybox]{
+  cursor: pointer;
+}

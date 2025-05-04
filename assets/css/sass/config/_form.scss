@@ -1,0 +1,56 @@
+//Button
+.btn {
+  font-weight: 600;
+}
+/*Form element style*/
+.form{
+
+  .form-control{
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  textarea{
+    height: 150px!important;
+    resize: none;
+  }
+}
+/*custom checkbox*/
+.form-check {
+  position: relative;
+  padding: 0;
+  .form-check-input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .form-check-label {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    font-size: 14px;
+    gap: 5px;
+    cursor: pointer;
+
+    .customIcon {
+      color: var(--primary);
+      font-size: 24px;
+      margin-right: 5px;
+      transition: all 0.3s linear;
+    }
+    @media screen and (min-width: 992px) {
+      &:hover {
+        .customIcon {
+          color: var(--tertiary);
+        }
+      }
+    }
+  }
+  &.favorite {
+    .form-check-input:checked ~ .form-check-label .customIcon:before {
+      content: "\e903";
+      font-family: "customFont";
+      color: var(--tertiary);
+    }
+  }
+}
