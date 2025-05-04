@@ -559,8 +559,9 @@ header.fixed {
 }
 @media screen and (max-width: 991.98px) {
   .navbar-nav {
-    background-color: var(--white);
+    background-color: var(--primary);
     border-radius: 10px;
+    padding: 10px 30px;
   }
   .navbar-nav .nav-item:not(:first-child) .nav-link {
     border-top: 1px solid var(--gray-light);
