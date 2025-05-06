@@ -5,8 +5,9 @@
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 6rem;
-  height: 6rem;
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
   transition: all 0.3s linear;
   filter: invert(1);
   background-color: var(--black);
@@ -16,14 +17,22 @@
   font: 1em sans-serif;
   align-items: center;
   justify-content: center;
-  background-size: 4rem;
+  background-size: 20px;
+  @media screen and (min-width: 992px) {
+    width: 6rem;
+    min-width: 6rem;
+    height: 6rem;
+    background-size: 4rem;
+  }
 }
 .carousel-control-next-icon {
-  background-position: 70%;
+  @media screen and (min-width: 992px) {
+    background-position: 70%;
+  }
 }
 .carousel-control-prev-icon {
-  background-position: 40%;
   @media screen and (min-width: 992px) {
+    background-position: 40%;
     &:hover {
       transform: translateX(-16px);
     }
@@ -61,6 +70,6 @@
 }
 
 /*Carousel standart style end*/
-.carousel-item[data-fancybox]{
+.carousel-item[data-fancybox] {
   cursor: pointer;
 }
